@@ -10,7 +10,7 @@ export const skills: Skill[] = [
   { id: 'pivot-tables', name: 'Pivot Tables', category: 'Excel', level: 88, experience: '3+ years', icon: 'TbTable' },
   { id: 'power-query', name: 'Power Query', category: 'Excel', level: 80, experience: '2+ years', icon: 'TbDatabase' },
   { id: 'power-pivot', name: 'Power Pivot', category: 'Excel', level: 78, experience: '1+ year', icon: 'TbChartDots' },
-{ id: 'tableau', name: 'Tableau', category: 'Data Analytics', level: 85, experience: '1+ year', icon: 'SiTableau' },
+{ id: 'tableau', name: 'Tableau', category: 'Visualization', level: 76, experience: '1+ year', icon: 'SiTableau' },
 
   { id: 'power-bi', name: 'Power BI', category: 'Visualization', level: 90, experience: '2+ years', icon: 'TbBrandPowershell' },
   { id: 'matplotlib', name: 'Matplotlib', category: 'Visualization', level: 84, experience: '2+ years', icon: 'SiPython' },
