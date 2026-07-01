@@ -1,127 +1,157 @@
-# Neeraj Kumar — Data Analyst Portfolio
+📊 Neeraj Kumar | Data Analytics Portfolio
 
-A premium, data-driven analytics portfolio built with React 19, TypeScript, Tailwind CSS and Framer Motion. Designed to feel like a modern SaaS analytics product — dark theme, glassmorphism, animated dashboards and fully data-driven content.
+Welcome to my personal Data Analytics Portfolio, built to showcase my skills, projects, dashboards, and problem-solving approach using real-world datasets.
 
-**Live demo:** _add your deployed URL here_
+This portfolio reflects my journey as an aspiring Data Analyst, highlighting projects in SQL, Python, Excel, Power BI, Tableau, and Data Visualization with an interactive and modern user interface.
 
----
+🌐 Live Portfolio: https://your-vercel-link.vercel.app
 
-## ✨ Features
+⸻
 
-- Animated hero with rotating role titles and floating dashboard motifs
-- Data-driven Projects grid with search, category filters and a full-detail modal
-- Dashboard Gallery, Case Studies, SQL Showcase and Python Notebook Showcase
-- Skills, Tools and Services sections with progress bars and hover animations
-- "Learning Journey" timeline in place of formal work experience
-- Certifications grid that grows automatically from a single data file
-- Live GitHub stats (followers, repos, latest activity) via the GitHub REST API
-- Resume section + downloadable PDF resume
-- Contact form wired for EmailJS, with toast notifications and validation
-- Fully responsive: mobile, tablet, laptop, desktop and ultra-wide
-- SEO-ready: meta tags, Open Graph, Twitter cards, `robots.txt`, `sitemap.xml`
-- Accessible: semantic HTML, ARIA labels, visible focus states, reduced-motion support
+🚀 About the Portfolio
 
-## 🧱 Tech Stack
+This portfolio is designed with a modern dashboard-inspired interface that allows recruiters and hiring managers to explore my technical skills, analytics projects, certifications, and resume in one place.
 
-React 19 · Vite · TypeScript · Tailwind CSS v4 · Framer Motion · React Router DOM · React Icons · Lucide Icons · EmailJS · React Hot Toast · Recharts · React CountUp · React Intersection Observer
+✨ Highlights
 
-## 📁 Folder Structure
+* Modern & Fully Responsive Design
+* Interactive Dashboard UI
+* Smooth Animations with Framer Motion
+* Advanced Project Showcase
+* SQL Portfolio
+* Python Analytics Projects
+* Power BI Dashboard Gallery
+* Tableau Dashboard Gallery
+* Skills & Tools Section
+* Resume Download
+* Contact Form
+* GitHub Integration
+* Dark Mode UI
+* Optimized Performance
+* SEO Friendly
 
-```
-portfolio/
-├── public/
-│   ├── resume.pdf
-│   ├── robots.txt
-│   ├── sitemap.xml
-│   ├── manifest.json
-│   └── assets/images/
-├── src/
-│   ├── main.tsx
-│   ├── App.tsx
-│   ├── index.css
-│   ├── pages/              # Home, NotFound
-│   ├── components/
-│   │   ├── layout/         # Navbar, Sidebar, Footer, BackToTop, ThemeToggle
-│   │   ├── sections/       # Hero, About, Skills, Projects, Contact, etc.
-│   │   └── ui/              # ProjectCard, KPICard, ChartCard, Modal, etc.
-│   ├── data/                # ⭐ All content lives here — never hardcoded in components
-│   ├── hooks/                # useTypingEffect, useScrollSpy, useTheme
-│   ├── types/                 # Shared TypeScript interfaces
-│   └── utils/                  # iconRegistry (safe icon resolver)
-```
+⸻
 
-## 🚀 Getting Started
+🛠 Tech Stack
 
-```bash
+Frontend
+
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* Framer Motion
+
+Data Analytics
+
+* Python
+* SQL
+* MySQL
+* Microsoft Excel
+* Power BI
+* Tableau
+* Pandas
+* NumPy
+* Matplotlib
+* Plotly
+
+Tools
+
+* Git
+* GitHub
+* VS Code
+* Figma
+
+⸻
+
+📂 Portfolio Sections
+
+* Home
+* About Me
+* Skills
+* Analytics Projects
+* SQL Showcase
+* Python Projects
+* Power BI Dashboards
+* Tableau Dashboards
+* Certifications
+* Resume
+* Contact
+
+⸻
+
+⚙️ Installation
+
+Clone the repository
+
+git clone https://github.com/Neerajhsp/Data_Analytics.Portfolio.git
+
+Move into the project
+
+cd Data_Analytics.Portfolio
+
+Install dependencies
+
 npm install
+
+Run the development server
+
 npm run dev
-```
 
-Open `http://localhost:5173`. That's it — no manual configuration required to see the site running.
+Build for production
 
-To build for production:
-
-```bash
 npm run build
+
+Preview production build
+
 npm run preview
-```
 
-## ➕ How to Add a New Project
+⸻
 
-Every project card, filter, search result, dashboard gallery tile and modal is generated from **one file**: `src/data/projects.ts`.
+📈 Featured Skills
 
-1. Open `src/data/projects.ts`
-2. Copy an existing project object
-3. Fill in the fields (the shape is defined by the `Project` interface in `src/types/index.ts`)
-4. Save — the new project automatically appears in Projects, Dashboard Gallery, filters and search. No component code needs to change.
+* Data Cleaning
+* Data Analysis
+* Exploratory Data Analysis (EDA)
+* Dashboard Development
+* Data Visualization
+* Business Insights
+* SQL Queries
+* Excel Reporting
+* Power BI
+* Tableau
+* Python Programming
 
-The same pattern applies to `skills.ts`, `services.ts`, `certifications.ts`, `caseStudies.ts`, `sqlShowcase.ts`, `notebooks.ts` and every other file in `src/data`.
+⸻
 
-## 📄 How to Update Your Resume
+📜 Certifications
 
-Replace `public/resume.pdf` with your own PDF (keep the same filename), or update the `href` in `src/components/sections/Resume.tsx` and `Hero.tsx` if you rename the file.
+* IBM Cloud Developer
+* Python Development – Code With Harry
+* Data Analytics – Code With Harry
 
-## 📬 How to Configure EmailJS
+⸻
 
-The contact form in `src/components/sections/Contact.tsx` is wired for [EmailJS](https://www.emailjs.com/):
+🎯 Career Objective
 
-1. Create a free EmailJS account and an Email Service + Template
-2. Copy your **Service ID**, **Template ID** and **Public Key**
-3. Open `src/components/sections/Contact.tsx` and replace the placeholder constants near the top of the file
-4. Restart the dev server
+I am currently pursuing a B.Tech in Computer Science & Engineering and actively seeking opportunities as a Data Analyst, Business Analyst, or BI Analyst.
 
-Until configured, the form shows a friendly error toast instead of silently failing.
+I enjoy transforming raw data into meaningful insights that help support better business decisions through dashboards, reports, and analytics.
 
-## ☁️ Deployment
+⸻
 
-### Vercel
-```bash
-npm install -g vercel
-vercel
-```
-Framework preset: **Vite**. Build command: `npm run build`. Output directory: `dist`.
+📬 Contact
 
-### Netlify
-```bash
-npm install -g netlify-cli
-netlify deploy --build
-```
-Build command: `npm run build`. Publish directory: `dist`.
+Neeraj Kumar
 
-### GitHub Pages
-1. `npm install --save-dev gh-pages`
-2. Add `"homepage": "https://<username>.github.io/<repo>"` to `package.json`
-3. Add scripts: `"predeploy": "npm run build"`, `"deploy": "gh-pages -d dist"`
-4. `npm run deploy`
+📍 Hoshiarpur, Punjab, India
 
-## 🖼️ Screenshots
+📧 rk9873671@gmail.com
 
-_Add screenshots of the live site here once deployed._
+🔗 LinkedIn: https://linkedin.com/in/neeraj-kumar-98125640a
 
-## 🛡️ Icon Safety
+💻 GitHub: https://github.com/Neerajhsp
 
-All icons are resolved through `src/utils/iconRegistry.ts`, which looks up icon names across the Tabler, Simple Icons and Font Awesome 6 icon sets and falls back to a safe default if a name doesn't exist — the app never breaks or shows a broken import because of an icon name.
+⸻
 
-## 📜 License
-
-This is personal portfolio source code belonging to Neeraj Kumar. Feel free to reference the architecture, but please don't republish the content or branding as your own.
+⭐ If you like this portfolio, consider giving this repository a Star.
