@@ -7,6 +7,7 @@ export const certifications: Certification[] = [
     issuer: 'IBM',
     date: '2024',
     icon: 'TbCloudComputing',
+    link: "/certificates/ibm.pdf",
   },
   {
     id: 'python-development',
@@ -21,5 +22,6 @@ export const certifications: Certification[] = [
     issuer: 'CodeWithHarry',
     date: '2024',
     icon: 'TbChartHistogram',
+   link: '/certificates/data-analyst.pdf',
   },
 ];
