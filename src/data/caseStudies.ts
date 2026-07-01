@@ -1,0 +1,36 @@
+import type { CaseStudy } from '../types';
+
+export const caseStudies: CaseStudy[] = [
+  {
+    id: 'cs-sales-forecasting',
+    title: 'Forecasting Regional Sales for a Retail Chain',
+    category: 'Power BI',
+    businessProblem: 'Leadership lacked a forward-looking view of sales, relying only on historical actuals when planning inventory and budgets.',
+    dataset: 'Five years of Superstore transactional sales data across four regions',
+    approach: ['Define the forecast horizon and granularity with stakeholders', 'Separate the modelling layer (Python) from the reporting layer (Power BI)'],
+    cleaning: ['Removed cancelled and refunded transactions', 'Standardized category labels across regions'],
+    transformation: ['Aggregated transactions to a monthly grain', 'Built a fiscal calendar dimension table'],
+    analysis: ['Applied a Holt-Winters time-series model to project two quarters forward', 'Validated the forecast against a hold-out period'],
+    visualization: ['Combo chart layering actuals and forecast', 'Region and category breakdown with margin color encoding'],
+    insights: ['The West region was on track to outperform its target by double digits', 'Furniture carried high volume but thin margin relative to Technology'],
+    recommendations: ['Reallocate marketing budget toward high-margin categories', 'Pre-position inventory ahead of the Q4 demand forecast'],
+    futureImprovements: ['Automate the forecast refresh on a monthly schedule', 'Add confidence intervals to communicate forecast uncertainty'],
+    thumbnail: '/assets/images/dashboard/sales-forecast-thumb.svg',
+  },
+  {
+    id: 'cs-road-safety',
+    title: 'Identifying Road Safety Hotspots with Power BI',
+    category: 'Power BI',
+    businessProblem: 'Transport authorities needed to prioritize a limited safety budget across thousands of recorded incidents.',
+    dataset: 'UK Government open road-safety accident records',
+    approach: ['Model the data as a star schema for fast, flexible slicing', 'Design KPI cards stakeholders could scan in under ten seconds'],
+    cleaning: ['Filtered records with invalid GPS coordinates', 'Standardized severity and road-type codes'],
+    transformation: ['Built a date dimension table for time-intelligence measures', 'Created calculated columns for casualty-per-incident ratio'],
+    analysis: ['Compared severity rates between urban and rural road types', 'Quantified seasonal accident volume patterns'],
+    visualization: ['Map visual showing accident density by region', 'Stacked column of severity by road type'],
+    insights: ['Rural single-carriageway roads carried disproportionately high fatality rates', 'Accident volume peaked sharply in November and December'],
+    recommendations: ['Direct infrastructure investment toward rural single-carriageway corridors', 'Increase seasonal awareness campaigns ahead of the winter peak'],
+    futureImprovements: ['Layer in weather data to test correlation with severity', 'Add a predictive risk score per road segment'],
+    thumbnail: '/assets/images/dashboard/road-accident-thumb.svg',
+  },
+];
