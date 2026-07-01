@@ -14,7 +14,7 @@ export function CertificateCard({
 
   return (
     <motion.a
-      href={cert.link}
+      href={cert.credentialUrl}
       target="_blank"
       rel="noopener noreferrer"
       initial={{ opacity: 0, y: 24 }}
